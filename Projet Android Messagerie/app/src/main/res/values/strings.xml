@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Application Messagerie</string>
+    <string name="login">Identifiant</string>
+    <string name="mp">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="title_home">ACCUEIL</string>
+    <string name="title_inscription">INSCRIPTION</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="sex_insc">Choix du sex</string>
+    <string name="sex_masc_insc">Masculin</string>
+    <string name="sex_fem_insc">Feminin</string>
+    <string name="retour">Retour</string>
+    <string name="choix_ville">Choix de ville</string>
+    <string name="choix_ville_none">Veuillez choisir une ville</string>
+    <string name="title_ville">Liste des villes</string>
+    <string name="title_liste_conversation">Liste des conversations</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="nom_conversation">Nom de la conversation</string>
+    <string name="title_creer_conversation">Creation d\'une conversation</string>
+    <string name="title_liste_message">Messages</string>
+</resources>
