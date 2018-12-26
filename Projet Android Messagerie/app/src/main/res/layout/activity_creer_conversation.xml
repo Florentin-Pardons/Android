@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/titre_creer_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:text="@string/title_creer_conversation"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <!-- Champ Nom Conversation -->
+        <EditText
+            android:id="@+id/txtPseudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nom_conversation"
+            android:inputType=""/>
+
+        <!-- Bouton Confirmer -->
+        <Button
+            android:id="@+id/btnCreerConversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmer" />
+
+        <!-- Bouton retour -->
+        <Button
+            android:id="@+id/btn_creer_conversation_retour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/retour"/>
+    </LinearLayout>
+</ScrollView>
