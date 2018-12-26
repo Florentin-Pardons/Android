@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/titre_home"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:text="@string/title_home"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <!-- Champ Login -->
+        <EditText
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login"
+            android:inputType=""/>
+
+        <!-- Champ MP -->
+        <EditText
+            android:id="@+id/txtMp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mp"
+            android:inputType=""/>
+
+        <!-- Bouton Connexion -->
+        <Button
+            android:id="@+id/btnConnecter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/connexion" />
+
+        <!-- Bouton Inscription -->
+        <Button
+            android:id="@+id/btnInscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/inscription" />
+
+    </LinearLayout>
+</ScrollView>
