@@ -36,6 +36,7 @@ public class MessageActivity extends AppCompatActivity {
     private List<Message> listMessage = new ArrayList<Message>();
 
     private String textM;
+    private int index = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class MessageActivity extends AppCompatActivity {
         buildTable();
     }
 
-    //Creer Conversation
+    //Creer Message
     View.OnClickListener CreerMessageMth = new View.OnClickListener() {
         @Override
         public void onClick(View v)
@@ -76,6 +77,7 @@ public class MessageActivity extends AppCompatActivity {
             textM = text.getText().toString();
 
             if(!textM.equals("")) {
+                addline(textM, Session.getInstance().getUser());
                 new MessageAjouterAsync(MessageActivity.this).execute(textM, getIntent().getExtras().getString("idconv"));
             }
             else
@@ -97,7 +99,7 @@ public class MessageActivity extends AppCompatActivity {
         }
     };
 
-    //Connexion
+    //Retour
     View.OnClickListener RetourConvMth = new View.OnClickListener() {
         @Override
         public void onClick(View v)
@@ -109,8 +111,6 @@ public class MessageActivity extends AppCompatActivity {
     //Construction de la table
     private void buildTable() {
         //table_layout.removeAllViews();
-
-        int index = 0;
 
         for (Message m : listMessage) {
             final String text = m.getText();
@@ -145,6 +145,36 @@ public class MessageActivity extends AppCompatActivity {
 
             index += 1;
         }
+    }
+
+    private void addline(String text, Utilisateur user)
+    {
+        final TableRow row = new TableRow(this);
+        row.setLayoutParams(new TableRow.LayoutParams(
+                TableLayout.LayoutParams.MATCH_PARENT,
+                TableLayout.LayoutParams.WRAP_CONTENT));
+
+        TextView tv = new TextView(this);
+        tv.setLayoutParams(new TableRow.LayoutParams(
+                TableLayout.LayoutParams.MATCH_PARENT,
+                TableLayout.LayoutParams.WRAP_CONTENT));
+
+        if(user.getSexe() == true)
+            tv.setTextColor(Color.BLUE);
+        else
+            tv.setTextColor(Color.RED);
+
+        tv.setGravity(Gravity.RIGHT);
+
+
+        tv.setTextSize(20);
+        tv.setText(user.getPseudo() + " : " + text);
+        row.setId(index);
+        row.addView(tv);
+
+        table_layout.addView(row);
+
+        index += 1;
     }
 
     //Refraichissement de la liste de message

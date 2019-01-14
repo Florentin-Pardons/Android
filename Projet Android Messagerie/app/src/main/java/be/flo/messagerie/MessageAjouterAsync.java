@@ -17,13 +17,13 @@ import java.util.Scanner;
 import be.flo.messagerie.Javabean.Message;
 import be.flo.messagerie.Javabean.Session;
 
-public class MessageAjouterAsync extends AsyncTask<String, Void, Message> {
+public class MessageAjouterAsync extends AsyncTask<String, Void, Void> {
     private Activity activity;
     private String idconv;
 
     public MessageAjouterAsync(Activity activity){this.activity=activity;}
     @Override
-    protected Message doInBackground(String... strings) {
+    protected Void doInBackground(String... strings) {
         Message m = null;
         idconv = strings[1];
         try {
@@ -56,14 +56,14 @@ public class MessageAjouterAsync extends AsyncTask<String, Void, Message> {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return m;
+        return null;
     }
-
+/*
     @Override
     protected void onPostExecute(Message message) {
         super.onPostExecute(message);
         if (message != null) {
             new MessageAsync(activity).execute(idconv);
         }
-    }
+    }*/
 }
