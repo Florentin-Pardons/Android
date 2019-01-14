@@ -17,12 +17,12 @@
             android:text="@string/title_creer_conversation"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="36sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <!-- Champ Nom Conversation -->
         <EditText
-            android:id="@+id/txtPseudo"
+            android:id="@+id/txtConv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/nom_conversation"
