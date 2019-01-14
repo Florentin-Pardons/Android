@@ -54,6 +54,7 @@
                 android:id="@+id/radio_masc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:text="@string/sex_masc_insc"/>
 
             <RadioButton
@@ -78,7 +79,7 @@
 
         <!-- Bouton Confirmer -->
         <Button
-            android:id="@+id/btnInscription"
+            android:id="@+id/btn_inscription_confirmer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/inscription" />
