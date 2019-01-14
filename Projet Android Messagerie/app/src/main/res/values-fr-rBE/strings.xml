@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Messagerie Android</string>
+    <string name="title_home">Accueil</string>
+    <string name="login">Login</string>
+    <string name="mp">Mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="inscription">Inscription</string>
+    <string name="title_inscription">Inscription</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="sex_insc">Choix du sexe</string>
+    <string name="sex_masc_insc">Homme</string>
+    <string name="sex_fem_insc">Femme</string>
+    <string name="choix_ville">Choix de la ville</string>
+    <string name="choix_ville_none">Ville ?</string>
+    <string name="retour">Retour</string>
+    <string name="title_liste_conversation">Liste des conversations</string>
+    <string name="title_deconnecter">Deconnecter</string>
+    <string name="title_liste_message">Liste des messages</string>
+    <string name="title_liste_conversation_creer">Creer</string>
+    <string name="title_ville">Choix de la ville</string>
+    <string name="title_creer_conversation">Creer une conversation</string>
+    <string name="nom_conversation">Nom</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="message">Message ?</string>
+    <string name="nomCon">Nom</string>
+    <string name="erreur">Error</string>
+    <string name="erreur_login_msg">Login/MP incomplet</string>
+    <string name="erreur_loginConf_msg">Login/MP incorrecte</string>
+    <string name="erreur_inscription_msg">Pseudo/MP/Sexe/Ville incomplet</string>
+    <string name="erreur_Conv_Ajout_msg">Nom incomplet</string>
+
+</resources>
