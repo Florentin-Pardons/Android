@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="be.flo.projet_android_messagerie">
+    package="be.flo.messagerie">
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ConversationActivity" />
+        <activity android:name=".ConversationAjouterActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".InscriptionActivity" />
+        <activity android:name=".VilleActivity" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
